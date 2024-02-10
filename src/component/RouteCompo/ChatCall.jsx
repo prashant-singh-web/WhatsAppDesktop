@@ -7,7 +7,7 @@ function ChatCall() {
     const [isfocused, setIsfocused] = useState(false);
   return (
     <div className="w-full h-full grid grid-cols-[40%_60%]">
-    <div className="w-full h-full border-r-2 border-gray-200 flex flex-col">
+    <div className="w-full h-full border-r-2 dark:border-r-gray-700/40 border-gray-200 flex flex-col">
       <div className="w-full h-28 p-5  flex flex-col justify-between">
         <div className="flex flex-row justify-between">
           <p className="text-xl font-semibold">Call</p>
@@ -17,7 +17,7 @@ function ChatCall() {
           </div>
         </div>
         <div
-          className={`flex border-[1.5px] overflow-hidden rounded-md bg-white ${
+          className={`flex border-[1.5px] overflow-hidden dark:border-b-2 rounded-md bg-white dark:bg-transparent ${
             isfocused ? "border-b-green-700" : "border-b-gray-400"
           } border-gray-200`}
         >
@@ -27,7 +27,7 @@ function ChatCall() {
             onFocus={() => setIsfocused(true)}
             onBlur={() => setIsfocused(false)}
             placeholder="Search or Start a new chat..."
-            className="w-full text-sm py-1 outline-none "
+            className="w-full text-sm py-1 outline-none dark:bg-transparent"
           />
         </div>
       </div>

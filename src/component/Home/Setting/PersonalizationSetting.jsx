@@ -19,12 +19,12 @@ function PersonalizationSetting() {
   }, [mode]);
   console.log(localStorage.getItem("theme"));
   return (
-    <div className="w-full flex flex-col p-5 dark:bg-black">
+    <div className="w-full flex flex-col p-5 ">
       <p className="text-xl font-semibold">Personalization</p>
-      <p>Theme</p>
-      <p>App theme color</p>
+      <p className="text-lg mt-6">Theme</p>
+      <p className="text-sm">App theme color</p>
       <div
-        className="flex cursor-pointer w-[65%] flex-row  items-center px-3 border-[1.5px]  py-1 rounded-md border-b-gray-300 relative"
+        className="flex my-2 cursor-pointer w-[65%] flex-row  items-center px-3 border-[1.5px]  py-1 rounded-md border-b-gray-300 relative"
         onClick={() => setToggle((toggle) => !toggle)}
       >
         <VscSymbolColor />
@@ -69,7 +69,7 @@ function PersonalizationSetting() {
           </div>
         </div>
       </div>
-      <p>Chat wallpaper</p>
+      <p className="text-lg my-1">Chat wallpaper</p>
       <div className="w-full grid grid-cols-5 gap-2">
         <div className="w-full rounded-md h-12 border-2 hover:border-gray-400 border-white bg-gray-200 "></div>
         <div className="w-full rounded-md h-12 border-2 hover:border-gray-400 border-white bg-orange-100 "></div>
@@ -89,12 +89,12 @@ function PersonalizationSetting() {
           id=""
           className="p-2 border-[1.5px] hover:bg-gray-200 checked:hover:bg-green-600 border-gray-500 checked:border-green-600 rounded-md duration-300 ease-in-out che appearance-none checked:bg-green-600 relative before:absolute before:bg-white before:w-[2px] checked:before:h-[6px] before:rotate-[-40deg] before:z-40 before:left-[3.1px] before:bottom-[3px] after:absolute after:bg-white after:w-[2px] after:h-0 checked:after:h-[10px] after:rotate-45 after:duration-200 after:ease-in-out after:z-40 after:left-[8.8px] after:bottom-1"
         />
-        <p className="text-sm pl-3">WhatsApp doodle</p>
+        <p className="text-sm pl-3 my-2">WhatsApp doodle</p>
       </div>
-      <button className="w-fit border-[1.5px] text-sm px-10 py-1 rounded-md border-b-gray-300">
+      <button className="w-fit mb-2 border-[1.5px] text-sm px-10 py-1 rounded-md border-b-gray-300">
         Reset
       </button>
-      <p>Text size</p>
+      <p className="my-2 text-base">Text size</p>
       <div
         className="flex cursor-pointer w-[65%] flex-row  items-center px-3 border-[1.5px]  py-1 rounded-md border-b-gray-300 relative"
         onClick={() => setTextToggle((textToggle) => !textToggle)}
@@ -125,6 +125,7 @@ function PersonalizationSetting() {
           </div>
         </div>
       </div>
+      <p className="text-sm mt-2">Use Ctrl +/- to increase or decrease your text-size</p>
     </div>
   );
 }

@@ -89,7 +89,7 @@ function ShortcutSetting() {
     },
   ];
   return (
-    <div className="w-full h-[34rem] overflow-y-scroll languageDropdown flex flex-col p-5">
+    <div className="w-full h-[34rem] overflow-y-scroll scrollDropdown flex flex-col p-5">
       <p className="text-xl font-semibold">Storage</p>
       <p className="text-xl mt-5">Keyboard shortcuts</p>
       {shortCuts.map((short, index) => {

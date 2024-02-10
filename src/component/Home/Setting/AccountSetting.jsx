@@ -4,7 +4,7 @@ import { CiMobile1 } from "react-icons/ci";
 function AccountSetting() {
     const [toggle, settoggle] = useState(false);
   return (
-    <div className="languageDropdown w-full h-[34rem] overflow-y-scroll flex flex-col p-5">
+    <div className="languageDropdown w-full h-[34rem] overflow-y-scroll scrollDropdown flex flex-col p-5">
       <p className="text-xl font-semibold">Account</p>
       <p className="text-lg mt-5">Privacy</p>
       <p className="text-sm  font-sans">Managed on your phone</p>
@@ -27,7 +27,7 @@ function AccountSetting() {
       <div className="flex flex-col text-sm my-3 space-y-1">
         <p>Read receipts</p>
         <p>On</p>
-        <p className="text-xs text-gray-700">
+        <p className="text-xs text-gray-700 dark:text-gray-200">
           Read receipt are always sent for group chats
         </p>
       </div>
@@ -67,7 +67,7 @@ function AccountSetting() {
             On
           </p>
         </div>
-        <p className="text-xs text-gray-700 my-5">Get notified when your security code changes for a contacts phone. If you have multiple devices, this setting must be enabled on each device where you want to get notifications <span className="text-green-600 underline cursor-pointer hover:no-underline">
+        <p className="text-xs text-gray-700 dark:text-gray-200 my-5">Get notified when your security code changes for a contacts phone. If you have multiple devices, this setting must be enabled on each device where you want to get notifications <span className="text-green-600 underline cursor-pointer hover:no-underline">
           Learn More
         </span>.</p>
     </div>

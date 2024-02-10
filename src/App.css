@@ -4,27 +4,39 @@
     height: 5px !important;
   
 }
-.languageDropdown::-webkit-scrollbar{
+.scrollDropdown::-webkit-scrollbar{
     width: 2px !important;
     height: 5px !important;
+    background: transparent !important;
   
 }
-.chatname::-webkit-scrollbar-track{
+
+.scrollDropdown::-webkit-scrollbar-thumb {
+    background: rgba(128, 128, 128, 0.6);
+   
+    max-height: 5px;
+    border-radius: 10px;
+}
+.scrollbar::-webkit-scrollbar-track{
     width: 2px !important;
    height: 3px;
     background-color: white;
 }
-.chatname::-webkit-scrollbar-thumb {
+.scrollbar::-webkit-scrollbar-thumb {
     background: rgba(128, 128, 128, 0.2);
    
     min-height: 5px;
     border-radius: 10px;
 }
-.languageDropdown::-webkit-scrollbar-thumb {
+.scrollbar::-webkit-scrollbar-thumb {
     background: rgba(128, 128, 128, 0.6);
    
     max-height: 5px;
     border-radius: 10px;
+}
+
+.scrollbar::-webkit-scrollbar-button{
+    width: 2px !important;
 }
 
 

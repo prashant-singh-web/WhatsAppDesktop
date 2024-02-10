@@ -19,7 +19,7 @@ function NotificationSetting() {
       <div className="w-full flex flex-row justify-between items-center mt-4">
         <div className="flex flex-col ">
           <p className="text-sm ">When WhatsApp is closed</p>
-          <p className="text-xs text-gray-500">
+          <p className="text-xs text-gray-500 dark:text-gray-200">
             Continue to show notifications when WhatsApp is not open
           </p>
         </div>
@@ -30,11 +30,11 @@ function NotificationSetting() {
             className={`w-10 rounded-xl  h-5 border-[1.5px]  relative cursor-pointer duration-200 ease-in-out ${
               isWhatsapp
                 ? "bg-green-700 border-green-700"
-                : "bg-white border-gray-400"
+                : "bg-white border-gray-400 dark:bg-transparent"
             } before:absolute before:p-1.5 ${
               isWhatsapp
-                ? "before:bg-white before:translate-x-[20px]"
-                : "before:bg-gray-500 before:translate-x-0"
+                ? "before:bg-white dark:before:bg-black before:translate-x-[20px]"
+                : "before:bg-gray-500 dark:before:bg-gray-300 before:translate-x-0"
             } before:ease-in-out before:duration-200 before:rounded-full before:top-[2.6px] before:hover:scale-110 before:left-[2px]`}
           ></div>
         </div>
@@ -50,12 +50,12 @@ function NotificationSetting() {
             onClick={() => setIsMessages((isMessages) => !isMessages)}
             className={`w-10 rounded-xl  h-5 border-[1.5px]  relative cursor-pointer duration-200 ease-in-out ${
               isMessages
-                ? "bg-green-700 border-green-700"
-                : "bg-white border-gray-400"
+              ? "bg-green-700 border-green-700"
+                : "bg-white border-gray-400 dark:bg-transparent"
             } before:absolute before:p-1.5 ${
               isMessages
-                ? "before:bg-white before:translate-x-[20px]"
-                : "before:bg-gray-500 before:translate-x-0"
+              ? "before:bg-white dark:before:bg-black before:translate-x-[20px]"
+                : "before:bg-gray-500 dark:before:bg-gray-300 before:translate-x-0"
             } before:ease-in-out before:duration-200 before:rounded-full before:top-[2.6px] before:hover:scale-110 before:left-[2px]`}
           ></div>
         </div>
@@ -70,12 +70,12 @@ function NotificationSetting() {
             onClick={() => setIsReaction((isReaction) => !isReaction)}
             className={`w-10 rounded-xl  h-5 border-[1.5px]  relative cursor-pointer duration-200 ease-in-out ${
               isReaction
-                ? "bg-green-700 border-green-700"
-                : "bg-white border-gray-400"
+              ? "bg-green-700 border-green-700"
+                : "bg-white border-gray-400 dark:bg-transparent"
             } before:absolute before:p-1.5 ${
               isReaction
-                ? "before:bg-white before:translate-x-[20px]"
-                : "before:bg-gray-500 before:translate-x-0"
+              ? "before:bg-white dark:before:bg-black before:translate-x-[20px]"
+                : "before:bg-gray-500 dark:before:bg-gray-300 before:translate-x-0"
             } before:ease-in-out before:duration-200 before:rounded-full before:top-[2.6px] before:hover:scale-110 before:left-[2px]`}
           ></div>
         </div>
@@ -90,12 +90,12 @@ function NotificationSetting() {
             onClick={() => setIsCalls((isCalls) => !isCalls)}
             className={`w-10 rounded-xl  h-5 border-[1.5px]  relative cursor-pointer duration-200 ease-in-out ${
               isCalls
-                ? "bg-green-700 border-green-700"
-                : "bg-white border-gray-400"
+              ? "bg-green-700 border-green-700"
+                : "bg-white border-gray-400 dark:bg-transparent"
             } before:absolute before:p-1.5 ${
               isCalls
-                ? "before:bg-white before:translate-x-[20px]"
-                : "before:bg-gray-500 before:translate-x-0"
+              ? "before:bg-white dark:before:bg-black before:translate-x-[20px]"
+                : "before:bg-gray-500 dark:before:bg-gray-300 before:translate-x-0"
             } before:ease-in-out before:duration-200 before:rounded-full before:top-[2.6px] before:hover:scale-110 before:left-[2px]`}
           ></div>
         </div>
@@ -105,7 +105,7 @@ function NotificationSetting() {
       <div className="w-full flex flex-row justify-between items-center mt-4">
         <div className="flex flex-col ">
           <p className="text-sm ">Text preview</p>
-          <p className="text-xs text-gray-500">
+          <p className="text-xs text-gray-500 dark:text-gray-200">
             Show message preview text inside new message notifications
           </p>
         </div>
@@ -117,12 +117,12 @@ function NotificationSetting() {
             onClick={() => setIsTextPreview((isTextPreview) => !isTextPreview)}
             className={`w-10 rounded-xl  h-5 border-[1.5px]  relative cursor-pointer duration-200 ease-in-out ${
               isTextPreview
-                ? "bg-green-700 border-green-700"
-                : "bg-white border-gray-400"
+              ? "bg-green-700 border-green-700"
+                : "bg-white border-gray-400 dark:bg-transparent"
             } before:absolute before:p-1.5 ${
               isTextPreview
-                ? "before:bg-white before:translate-x-[20px]"
-                : "before:bg-gray-500 before:translate-x-0"
+              ? "before:bg-white dark:before:bg-black before:translate-x-[20px]"
+                : "before:bg-gray-500 dark:before:bg-gray-300 before:translate-x-0"
             } before:ease-in-out before:duration-200 before:rounded-full before:top-[2.6px] before:hover:scale-110 before:left-[2px]`}
           ></div>
         </div>
@@ -131,7 +131,7 @@ function NotificationSetting() {
       <div className="w-full flex flex-row justify-between items-center mt-4">
         <div className="flex flex-col ">
           <p className="text-sm">Media preview</p>
-          <p className="text-xs text-gray-500">
+          <p className="text-xs text-gray-500 dark:text-gray-200">
             Show media preview images inside new message notifications
           </p>
         </div>
@@ -145,12 +145,12 @@ function NotificationSetting() {
             }
             className={`w-10 rounded-xl  h-5 border-[1.5px]  relative cursor-pointer duration-200 ease-in-out ${
               isMediaPreview
-                ? "bg-green-700 border-green-700"
-                : "bg-white border-gray-400"
+              ? "bg-green-700 border-green-700"
+                : "bg-white border-gray-400 dark:bg-transparent"
             } before:absolute before:p-1.5 ${
               isMediaPreview
-                ? "before:bg-white before:translate-x-[20px]"
-                : "before:bg-gray-500 before:translate-x-0"
+              ? "before:bg-white dark:before:bg-black before:translate-x-[20px]"
+                : "before:bg-gray-500 dark:before:bg-gray-300 before:translate-x-0"
             } before:ease-in-out before:duration-200 before:rounded-full before:top-[2.6px] before:hover:scale-110 before:left-[2px]`}
           ></div>
         </div>
